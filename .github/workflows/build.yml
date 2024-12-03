@@ -63,13 +63,7 @@ jobs:
               
       - name: List
         run: ls
-          
-      - name: Unzip All Artifacts
-        run: |
-          for file in ./*.zip; do
-            unzip "$file" -d . || exit 1
-              done
-
+        
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
