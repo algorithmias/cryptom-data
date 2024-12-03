@@ -1,0 +1,31 @@
+safe: false
+
+title: Cryptom
+email: ola@algorithmia.tech
+description: >- # this means to ignore newlines until "baseurl:"
+  For all your analytical needs.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://algorithmias.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter_username: algorithmias
+github_username:  algorithmias
+
+collections:
+  moments:
+    output: true
+    permalink: /moments/:path/
+    files:
+      - moments/**/* 
+  signals:
+    output: true
+    permalink: /signals/:path/
+    files:
+      - signals/**/*
+  trendlines:
+    output: true
+    permalink: /trendlines/:path/
+    files:
+      - trendlines/**/*
+
+# Build settings
+theme: minima
