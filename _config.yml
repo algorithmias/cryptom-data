@@ -26,21 +26,23 @@ collections:
     permalink: /:collection/:path
     files:
       - trendlines/**/*
-  momentsR:
-    output: true
-    permalink: /moments.json
-    files:
-      - moments.json 
-  signalsR:
-    output: true
-    permalink: /signals.json
-    files:
-      - signals.json 
-  trendlinesR:
-    output: true
-    permalink: /trendlines.json
-    files:
-      - trendlines.json 
+      
+defaults:
+  - scope:
+      path: "moments.json"
+    values:
+      permalink: /moments.json
+      output: true
+  - scope:
+      path: "signals.json"
+    values:
+      permalink: /signals.json
+      output: true
+  - scope:
+      path: "trendlines.json"
+    values:
+      permalink: /trendlines.json
+      output: true
 
 # Build settings
 theme: minima
