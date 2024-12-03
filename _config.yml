@@ -12,7 +12,7 @@ url: "https://algorithmias.github.io" # the base hostname & protocol for your si
 twitter_username: algorithmias
 github_username:  algorithmias
 
-# show_dir_listing: true
+show_dir_listing: true
 
 collections:
   moments:
