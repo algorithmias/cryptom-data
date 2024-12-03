@@ -11,9 +11,6 @@ github_username:  algorithmias
 
 show_dir_listing: true
 
-data_dir : .
-includes_dir : .
-
 collections:
   moments:
     output: true
@@ -31,23 +28,23 @@ collections:
     files:
       - trendlines/**/*
 
-# defaults:
-#   - scope:
-#       path: "moments.json"
-#     values:
-#       permalink: /moments.json
-#   - scope:
-#       path: "signals.json"
-#     values:
-#       permalink: /signals.json
-#   - scope:
-#       path: "trendlines.json"
-#     values:
-#       permalink: /trendlines.json
+defaults:
+  - scope:
+      path: "data/moments.json"
+    values:
+      permalink: /moments.json
+  - scope:
+      path: "data/signals.json"
+    values:
+      permalink: /signals.json
+  - scope:
+      path: "data/trendlines.json"
+    values:
+      permalink: /trendlines.json
 
-permalink: /moments.json
-permalink: /signals.json
-permalink: /trendlines.json
+# permalink: /moments.json
+# permalink: /signals.json
+# permalink: /trendlines.json
       
 # Build settings
 theme: minima
