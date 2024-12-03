@@ -13,19 +13,22 @@ github_username:  algorithmias
 collections:
   moments:
     output: true
-    permalink: /moments/:path/
+    permalink: /:collection/:path
     files:
       - moments/**/* 
+      - moments.json 
   signals:
     output: true
-    permalink: /signals/:path/
+    permalink: /:collection/:path
     files:
       - signals/**/*
+      - signals.json 
   trendlines:
     output: true
-    permalink: /trendlines/:path/
+    permalink: /:collection/:path
     files:
       - trendlines/**/*
+      - trendlines.json 
 
 # Build settings
 theme: minima
