@@ -19,7 +19,7 @@ const dataPaths = ["moments", "signals", "trendlines"];
 for (const dataPath of dataPaths) {
     const directory = path.join(process.cwd(), dataPath);
     const structure = directoryStructure(directory);
-    const buildDir = path.join(process.cwd());
+    const buildDir = path.join(process.cwd(), "build");
     if (!fs.existsSync(buildDir)) {
         fs.mkdirSync(buildDir);
     }
