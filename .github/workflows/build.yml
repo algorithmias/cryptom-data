@@ -60,11 +60,11 @@ jobs:
         with:
           name: production
           path: .
-
+          
       - name: Unzip All Artifacts
         run: |
           for file in ./*.zip; do
-            unzip "$file" -d .
+            unzip "$file" -d . || exit 1
               done
 
       - name: Deploy to GitHub Pages
