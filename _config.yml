@@ -16,19 +16,21 @@ collections:
     permalink: /:collection/:path
     files:
       - moments/**/* 
-      - moments* 
   signals:
     output: true
     permalink: /:collection/:path
     files:
       - signals/**/*
-      - signals*
   trendlines:
     output: true
     permalink: /:collection/:path
     files:
       - trendlines/**/*
-      - trendlines*
+  json:
+    output: true
+    permalink: /
+    files:
+      - *.json
       
 # Build settings
 theme: minima
