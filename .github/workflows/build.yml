@@ -60,6 +60,9 @@ jobs:
         with:
           name: production
           path: .
+              
+      - name: List
+        run: ls
           
       - name: Unzip All Artifacts
         run: |
