@@ -24,5 +24,4 @@ for (const dataPath of dataPaths) {
         fs.mkdirSync(buildDir);
     }
     fs.writeFileSync(path.join(buildDir, `${dataPath}.json`), JSON.stringify(structure, null, 4));
-    fs.writeFileSync(path.join(process.cwd(), "_data", `${dataPath}.json`), JSON.stringify(structure, null, 4));
 }
