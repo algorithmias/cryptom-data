@@ -59,7 +59,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: production
-          path: .
+          path: data
               
       - name: List
         run: ls
