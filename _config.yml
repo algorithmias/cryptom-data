@@ -16,18 +16,30 @@ collections:
     permalink: /:collection/:path
     files:
       - moments/**/* 
-      - moments.json 
   signals:
     output: true
     permalink: /:collection/:path
     files:
       - signals/**/*
-      - signals.json 
   trendlines:
     output: true
     permalink: /:collection/:path
     files:
       - trendlines/**/*
+  momentsR:
+    output: true
+    permalink: /moments.json
+    files:
+      - moments.json 
+  signalsR:
+    output: true
+    permalink: /signals.json
+    files:
+      - signals.json 
+  trendlinesR:
+    output: true
+    permalink: /trendlines.json
+    files:
       - trendlines.json 
 
 # Build settings
