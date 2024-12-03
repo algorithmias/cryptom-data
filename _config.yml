@@ -10,6 +10,8 @@ url: "https://algorithmias.github.io" # the base hostname & protocol for your si
 twitter_username: algorithmias
 github_username:  algorithmias
 
+include: ["moments.json", "signals.json", "trendlines.json"]
+
 collections:
   moments:
     output: true
@@ -26,11 +28,6 @@ collections:
     permalink: /:collection/:path
     files:
       - trendlines/**/*
-  json:
-    output: true
-    permalink: /
-    files:
-      - *.json
       
 # Build settings
 theme: minima
