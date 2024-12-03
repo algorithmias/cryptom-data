@@ -1,3 +1,3 @@
 # Cryptom: Data
 
-Enjoy the database.
+Enjoy the database!
