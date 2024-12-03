@@ -19,6 +19,5 @@ const dataPaths = ["moments", "signals", "trendlines"];
 for (const dataPath of dataPaths) {
     const directory = path.join(process.cwd(), dataPath);
     const structure = directoryStructure(directory);
-    fs.writeFileSync(path.join(process.cwd(), `${dataPath}.json`), JSON.stringify(structure, null, 4));
-    fs.writeFileSync(path.join(process.cwd(), "_site", `${dataPath}.json`), JSON.stringify(structure, null, 4));
+    fs.writeFileSync(path.join(process.cwd(), "build", `${dataPath}.json`), JSON.stringify(structure, null, 4));
 }
