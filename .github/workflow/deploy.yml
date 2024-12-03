@@ -28,12 +28,12 @@ jobs:
       with:
         node-version: '14' # Specify the Node.js version you are using
 
+    - name: Run Build Script
+      run: ./build.sh
+
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
-
-    - name: Run Build Script
-      run: ./build.sh
