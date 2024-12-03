@@ -9,20 +9,18 @@ url: "https://algorithmias.github.io" # the base hostname & protocol for your si
 
 twitter_username: algorithmias
 github_username:  algorithmias
+
 defaults:
   - scope:
-      path: ""
-      type: moments
+      path: "moments.json"
     values:
       permalink: /moments.json
   - scope:
-      path: ""
-      type: signals
+      path: "signals.json"
     values:
       permalink: /signals.json
   - scope:
-      path: ""
-      type: trendlines
+      path: "trendlines.json"
     values:
       permalink: /trendlines.json
 
