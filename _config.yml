@@ -30,6 +30,11 @@ collections:
     permalink: /:collection/:path
     files:
       - trendlines/**/*
+  root:
+    output: true
+    permalink: /:collection/:path
+    files:
+      - .*
 
 defaults:
   - scope:
