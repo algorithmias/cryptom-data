@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Navigate to the root directory of the submodule
+cd "$(git rev-parse --show-toplevel)"
+
+# Run the build script
+./build.sh
+
+# Add the generated files to the commit
+git add .
