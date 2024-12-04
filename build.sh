@@ -1,6 +1,6 @@
 #!/bin/sh
 
-node scripts/generate_index.js
+node @scripts/generate_index.js
 bundle exec jekyll build
 
 # #!/bin/sh
