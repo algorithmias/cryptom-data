@@ -32,7 +32,7 @@ collections:
     output: true
     permalink: /:collection/:path
     files:
-      - build/*
+      - _data/*
 
 defaults:
   - scope:

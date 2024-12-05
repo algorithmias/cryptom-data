@@ -14,14 +14,24 @@ function directoryStructure(dir) {
     return structure;
 }
 
+function makeDirectory(buildPath) {
+    if (!fs.existsSync(buildPath)) {
+        fs.mkdirSync(buildPath);
+    }
+
+}
+
 const dataPaths = ["moments", "signals", "trendlines"];
 
 for (const dataPath of dataPaths) {
     const directory = path.join(process.cwd(), dataPath);
     const structure = directoryStructure(directory);
-    const buildDir = path.join(process.cwd());
-    if (!fs.existsSync(buildDir)) {
-        fs.mkdirSync(buildDir);
-    }
-    fs.writeFileSync(path.join(buildDir, `${dataPath}.json`), JSON.stringify(structure, null, 4));
+
+    const rootDirectory = path.join(process.cwd());
+    makeDirectory(rootDirectory);
+    fs.writeFileSync(path.join(rootDirectory, `${dataPath}.json`), JSON.stringify(structure, null, 4));
+    
+    const buildDirectory = path.join(process.cwd(), "_data");
+    makeDirectory(buildDirectory);
+    fs.writeFileSync(path.join(buildDirectory, `${dataPath}.json`), JSON.stringify(structure, null, 4));
 }
