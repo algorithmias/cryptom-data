@@ -4,10 +4,10 @@ title: Cryptom
 
 email: ola@algorithmia.tech
 
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   For all your analytical needs.
 
-url: "https://algorithmias.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://algorithmias.github.io"
 
 twitter_username: algorithmias
 github_username:  algorithmias
