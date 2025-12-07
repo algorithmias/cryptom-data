@@ -1,17 +1,4 @@
-# Cryptom: Data
+# Cryptom :: Data
 
 Enjoy the database!
 
-..........
-
-
-....
-
-
-
-..
-
-
-
-
-.
