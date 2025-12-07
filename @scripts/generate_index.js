@@ -8,7 +8,7 @@ function directoryStructure(dir) {
     if (fs.lstatSync(fullPath).isDirectory()) {
       structure[entry] = directoryStructure(fullPath);
     } else {
-      structure[entry] = entry;
+      structure[entry] = "";
     }
   });
   return structure;
@@ -21,7 +21,7 @@ function makeDirectory(buildPath) {
 
 }
 
-const dataPaths = ['moments', 'signals', 'trendlines'];
+const dataPaths = ['analogia', 'moments', 'signals', 'trendlines'];
 
 for (const dataPath of dataPaths) {
   const directory = path.join(process.cwd(), dataPath);
