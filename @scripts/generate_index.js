@@ -8,7 +8,7 @@ function directoryStructure(dir) {
     if (fs.lstatSync(fullPath).isDirectory()) {
       structure[entry] = directoryStructure(fullPath);
     } else {
-      structure[entry] = "";
+      structure[entry] = '';
     }
   });
   return structure;
